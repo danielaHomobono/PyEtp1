@@ -18,7 +18,7 @@ def probabilidad_coincidencia(k, N):
 
 for k in range(1, 51):
     probabilidad = probabilidad_coincidencia(k, 1000)
-    print(f"Para k = {k}: Probabilidad estimada = {probabilidad}")
+    print(f"Para un grupo de {k} personas, la probabilidad estimada es {probabilidad}")
 
 
 

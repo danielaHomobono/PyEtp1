@@ -16,13 +16,9 @@ def probabilidad_coincidencia(k, N):
             coincidencias += 1
     return coincidencias / N
 
-
-# calculamos la probabilidad para k entre 1 y 50
-probabilidades = [probabilidad_coincidencia(k, 1000) for k in range(1, 51)]
-
-# enumerate(), toma la lista probabilidades y empieza a contar desde 0.Entonces, como queremos que empiece a contar en 1.
-for k, prob in enumerate(probabilidades, 1):
-    print(f"Para un grupo de {k} personas, la probabilidad estimada de que al menos dos personas cumplan años el mismo día es {prob}")
+for k in range(1, 51):
+    probabilidad = probabilidad_coincidencia(k, 1000)
+    print(f"Para k = {k}: Probabilidad estimada = {probabilidad}")
 
 
 
